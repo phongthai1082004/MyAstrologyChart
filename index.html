@@ -443,104 +443,6 @@
 
             /* ===== RESPONSIVE DESIGN FOR MOBILE ===== */
 
-            /* Large tablets and small laptops */
-            @media (max-width: 1024px) {
-                .container {
-                    margin: 10px;
-                }
-
-                .content {
-                    padding: 20px;
-                }
-
-                .aspect-grid,
-                .practical-grid {
-                    grid-template-columns: 1fr;
-                }
-            }
-
-            /* Tablets */
-            @media (max-width: 768px) {
-                body {
-                    padding: 10px;
-                }
-
-                .container {
-                    margin: 0;
-                    border-radius: 15px;
-                }
-
-                .header {
-                    padding: 20px 15px;
-                }
-
-                .header h1 {
-                    font-size: 1.8em;
-                    margin-bottom: 8px;
-                }
-
-                .header p {
-                    font-size: 0.9em;
-                }
-
-                .content {
-                    padding: 20px 15px;
-                }
-
-                .section {
-                    padding: 20px 15px;
-                    margin-bottom: 25px;
-                }
-
-                .content-grid {
-                    grid-template-columns: 1fr;
-                    gap: 20px;
-                }
-
-                .planet-header {
-                    flex-direction: column;
-                    text-align: center;
-                    gap: 15px;
-                }
-
-                .planet-icon {
-                    margin-right: 0;
-                    margin-bottom: 10px;
-                }
-
-                .planet-name {
-                    font-size: 1.4em;
-                }
-
-                .planet-position {
-                    font-size: 1em;
-                }
-
-                .aspect-grid {
-                    grid-template-columns: 1fr;
-                    gap: 15px;
-                }
-
-                .practical-grid {
-                    grid-template-columns: 1fr;
-                    gap: 20px;
-                }
-
-                .synthesis {
-                    padding: 20px 15px;
-                }
-
-                .synthesis h3 {
-                    font-size: 1.6em;
-                    text-align: center;
-                }
-
-                .synthesis div[style*="grid"] {
-                    grid-template-columns: 1fr !important;
-                    gap: 15px !important;
-                }
-            }
-
             /* Mobile phones */
             @media (max-width: 480px) {
                 body {
@@ -551,6 +453,7 @@
                 .container {
                     border-radius: 10px;
                     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                    overflow-x: hidden;
                 }
 
                 .header {
@@ -558,8 +461,9 @@
                 }
 
                 .header h1 {
-                    font-size: 1.5em;
+                    font-size: 1.4em;
                     line-height: 1.2;
+                    word-wrap: break-word;
                 }
 
                 .header p {
@@ -568,20 +472,21 @@
                 }
 
                 .content {
-                    padding: 15px 10px;
+                    padding: 15px 8px;
                 }
 
                 .section {
-                    padding: 15px 10px;
+                    padding: 15px 8px;
                     margin-bottom: 20px;
                     border-radius: 10px;
+                    overflow-x: hidden;
                 }
 
                 /* Planet headers on mobile */
                 .planet-header {
                     flex-direction: row;
                     text-align: left;
-                    gap: 10px;
+                    gap: 8px;
                     margin-bottom: 15px;
                     padding-bottom: 10px;
                 }
@@ -590,56 +495,66 @@
                     width: 40px;
                     height: 40px;
                     font-size: 1.2em;
-                    margin-right: 10px;
+                    margin-right: 8px;
                     margin-bottom: 0;
                     flex-shrink: 0;
                 }
 
                 .planet-name {
-                    font-size: 1.1em;
+                    font-size: 1.05em;
                     line-height: 1.2;
                     margin-bottom: 3px;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
                 }
 
                 .planet-position {
-                    font-size: 0.8em;
+                    font-size: 0.75em;
                     line-height: 1.2;
+                    word-wrap: break-word;
                 }
 
                 /* Content sections */
                 .traits,
                 .examples {
-                    padding: 15px 10px;
+                    padding: 12px 8px;
                     margin-top: 15px;
                 }
 
                 .traits h4,
                 .examples h4 {
-                    font-size: 1em;
+                    font-size: 0.95em;
                     margin-bottom: 10px;
+                    word-wrap: break-word;
                 }
 
                 .trait-list li {
-                    padding: 8px 10px;
+                    padding: 8px;
                     margin: 6px 0;
-                    font-size: 0.9em;
-                    line-height: 1.3;
+                    font-size: 0.85em;
+                    line-height: 1.4;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
                 }
 
                 .example-item {
-                    padding: 10px;
+                    padding: 10px 8px;
                     margin: 8px 0;
-                    font-size: 0.9em;
+                    font-size: 0.85em;
+                    line-height: 1.4;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
                 }
 
                 .example-title {
-                    font-size: 0.9em;
+                    font-size: 0.85em;
                     margin-bottom: 5px;
+                    font-weight: 600;
                 }
 
                 /* Aspects section */
                 .aspect-card {
-                    padding: 15px 10px;
+                    padding: 12px 8px;
                 }
 
                 .aspect-header {
@@ -650,27 +565,29 @@
                 }
 
                 .aspect-symbol {
-                    font-size: 1.5em;
-                    margin-right: 10px;
-                    width: 40px;
+                    font-size: 1.4em;
+                    margin-right: 8px;
+                    width: 35px;
                     flex-shrink: 0;
                 }
 
                 .aspect-header h4 {
-                    font-size: 1em;
+                    font-size: 0.9em;
                     line-height: 1.2;
                     margin-bottom: 3px;
+                    word-wrap: break-word;
                 }
 
                 .aspect-type {
-                    font-size: 0.8em;
+                    font-size: 0.75em;
                 }
 
                 .aspect-content .meaning,
                 .aspect-content .examples {
                     padding: 8px;
                     margin-bottom: 10px;
-                    font-size: 0.85em;
+                    font-size: 0.8em;
+                    line-height: 1.4;
                 }
 
                 .aspect-content ul {
@@ -680,36 +597,59 @@
 
                 .aspect-content li {
                     margin: 5px 0;
-                    line-height: 1.3;
-                    font-size: 0.85em;
+                    line-height: 1.4;
+                    font-size: 0.8em;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
                 }
 
-                /* Practical applications */
+                /* IMPROVED: Practical applications - Tập trung cải thiện phần này */
+                .practical-grid {
+                    display: grid !important;
+                    grid-template-columns: 1fr !important;
+                    gap: 15px !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
+                }
+
                 .practical-card {
-                    padding: 15px 10px;
+                    padding: 12px 8px !important;
+                    margin: 0 !important;
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                    overflow-x: hidden !important;
+                    word-wrap: break-word !important;
                 }
 
                 .practical-header {
                     flex-direction: row;
                     align-items: center;
-                    margin-bottom: 15px;
-                    padding-bottom: 10px;
+                    margin-bottom: 12px;
+                    padding-bottom: 8px;
+                    flex-wrap: wrap;
                 }
 
                 .practical-icon {
-                    font-size: 2em;
-                    margin-right: 10px;
+                    font-size: 1.8em;
+                    margin-right: 8px;
                     flex-shrink: 0;
                 }
 
                 .practical-header h3 {
-                    font-size: 1.2em;
+                    font-size: 1.1em !important;
                     line-height: 1.2;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    flex: 1;
+                    min-width: 0;
                 }
 
                 .practical-content h4 {
-                    font-size: 1em;
-                    margin: 12px 0 8px 0;
+                    font-size: 0.9em !important;
+                    margin: 10px 0 6px 0 !important;
+                    word-wrap: break-word !important;
+                    overflow-wrap: break-word !important;
+                    line-height: 1.3 !important;
                 }
 
                 .current-info,
@@ -720,23 +660,37 @@
                 .love-characteristics,
                 .career-paths,
                 .lli-advantage {
-                    padding: 10px;
-                    margin-bottom: 10px;
-                    font-size: 0.85em;
-                    border-radius: 6px;
+                    padding: 8px !important;
+                    margin-bottom: 8px !important;
+                    font-size: 0.8em !important;
+                    border-radius: 6px !important;
+                    word-wrap: break-word !important;
+                    overflow-wrap: break-word !important;
+                    line-height: 1.4 !important;
+                    box-sizing: border-box !important;
                 }
 
                 .practical-content ul {
-                    margin: 8px 0;
-                    padding-left: 0;
+                    margin: 6px 0 !important;
+                    padding-left: 0 !important;
+                    list-style: none !important;
                 }
 
                 .practical-content li {
-                    margin: 6px 0;
-                    padding: 6px 8px;
-                    font-size: 0.85em;
-                    line-height: 1.3;
-                    border-radius: 4px;
+                    margin: 4px 0 !important;
+                    padding: 6px 8px !important;
+                    font-size: 0.8em !important;
+                    line-height: 1.4 !important;
+                    border-radius: 4px !important;
+                    word-wrap: break-word !important;
+                    overflow-wrap: break-word !important;
+                    white-space: normal !important;
+                    box-sizing: border-box !important;
+                }
+
+                .practical-content strong {
+                    font-weight: 600;
+                    word-wrap: break-word;
                 }
 
                 /* Contradictions section */
@@ -749,67 +703,78 @@
 
                 /* Synthesis section */
                 .synthesis {
-                    padding: 15px 10px;
+                    padding: 15px 8px;
                     margin-top: 25px;
+                    overflow-x: hidden;
                 }
 
                 .synthesis h3 {
-                    font-size: 1.4em;
+                    font-size: 1.3em;
                     margin-bottom: 15px;
                     text-align: center;
+                    word-wrap: break-word;
                 }
 
                 .synthesis p {
-                    font-size: 0.9em;
+                    font-size: 0.85em;
                     line-height: 1.5;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
                 }
 
                 .synthesis div[style*="grid"] {
+                    display: grid !important;
                     grid-template-columns: 1fr !important;
                     gap: 12px !important;
                     margin-top: 15px !important;
                 }
 
                 .synthesis div[style*="background: rgba(255,255,255,0.1)"] {
-                    padding: 12px !important;
+                    padding: 10px !important;
                     border-radius: 8px !important;
+                    word-wrap: break-word !important;
+                    overflow-wrap: break-word !important;
                 }
 
                 .synthesis h4 {
-                    font-size: 0.9em !important;
+                    font-size: 0.85em !important;
                     margin-bottom: 8px !important;
+                    word-wrap: break-word !important;
                 }
 
                 .synthesis div[style*="background: rgba(255,255,255,0.1)"] p {
-                    font-size: 0.8em !important;
+                    font-size: 0.75em !important;
                     line-height: 1.4 !important;
+                    word-wrap: break-word !important;
+                    overflow-wrap: break-word !important;
                 }
 
                 /* Section titles */
                 h2 {
-                    font-size: 1.3em !important;
+                    font-size: 1.2em !important;
                     margin-bottom: 20px !important;
-                    padding: 0 10px;
+                    padding: 0 8px;
                     text-align: center;
+                    word-wrap: break-word;
+                    line-height: 1.3;
                 }
 
                 h3 {
-                    font-size: 1.2em !important;
+                    font-size: 1.1em !important;
                     margin-bottom: 15px !important;
+                    word-wrap: break-word;
                 }
 
                 /* Touch-friendly buttons and hover effects */
                 .trait-list li:hover,
                 .practical-content li:hover {
                     transform: none;
-                    /* Disable hover transforms on mobile */
                 }
 
                 .section:hover,
                 .aspect-card:hover,
                 .practical-card:hover {
                     transform: none;
-                    /* Disable hover transforms on mobile */
                 }
 
                 /* Ensure text is readable */
@@ -821,7 +786,7 @@
                 .aspects-section,
                 .contradictions-section,
                 .practical-applications {
-                    margin-top: 25px;
+                    margin-top: 20px;
                 }
 
                 /* Fix any overflow issues */
@@ -832,39 +797,27 @@
                 .section {
                     overflow-x: hidden;
                 }
-            }
 
-            /* Very small phones */
-            @media (max-width: 360px) {
-                body {
-                    font-size: 13px;
+                /* Additional text overflow protection */
+                * {
+                    max-width: 100%;
+                    box-sizing: border-box;
                 }
 
-                .header h1 {
-                    font-size: 1.3em;
-                }
-
-                .planet-name {
-                    font-size: 1em;
-                }
-
-                .planet-position {
-                    font-size: 0.75em;
-                }
-
-                .practical-icon {
-                    font-size: 1.8em;
-                }
-
-                .aspect-symbol {
-                    font-size: 1.3em;
-                    width: 35px;
-                }
-
-                .planet-icon {
-                    width: 35px;
-                    height: 35px;
-                    font-size: 1.1em;
+                /* Ensure all text containers handle overflow properly */
+                p,
+                div,
+                span,
+                li,
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    hyphens: auto;
                 }
             }
         }
@@ -884,7 +837,7 @@
                 <div class="planet-header">
                     <div class="planet-icon" style="background: linear-gradient(135deg, #ff9800, #f57c00);">☉</div>
                     <div class="planet-title">
-                        <div class="planet-name">Mặt Trời trong Sư Tử</div>
+                        <div class="planet-name">Sun Sư Tử</div>
                         <div class="planet-position">17°51' - Nhà 10 (Sự nghiệp & Danh tiếng)</div>
                     </div>
                 </div>
@@ -925,7 +878,7 @@
                 <div class="planet-header">
                     <div class="planet-icon" style="background: linear-gradient(135deg, #9c27b0, #7b1fa2);">☽</div>
                     <div class="planet-title">
-                        <div class="planet-name">Mặt Trăng trong Song Tử</div>
+                        <div class="planet-name">Moon Song Tử</div>
                         <div class="planet-position">12°25' - Nhà 8 (Bí ẩn & Chuyển hóa)</div>
                     </div>
                 </div>
@@ -966,7 +919,7 @@
                 <div class="planet-header">
                     <div class="planet-icon" style="background: linear-gradient(135deg, #03a9f4, #0288d1);">☿</div>
                     <div class="planet-title">
-                        <div class="planet-name">Sao Thủy trong Xử Nữ (Nghịch hành)</div>
+                        <div class="planet-name">Mercury Xử Nữ (Nghịch hành)</div>
                         <div class="planet-position">8°46' - Nhà 11 (Bạn bè & Ước mơ)</div>
                     </div>
                 </div>
@@ -999,12 +952,51 @@
                 </div>
             </div>
 
+            <!-- Sao Kim -->
+            <div class="section venus">
+                <div class="planet-header">
+                    <div class="planet-icon" style="background: linear-gradient(135deg, #e91e63, #c2185b);">♀</div>
+                    <div class="planet-title">
+                        <div class="planet-name">Venus Cự Giải</div>
+                        <div class="planet-position">2°22' - Nhà 9 (Triết lý & Học tập)</div>
+                    </div>
+                </div>
+                <div class="content-grid">
+                    <div class="traits">
+                        <h4>Tình yêu & Giá trị</h4>
+                        <ul class="trait-list">
+                            <li>Cần cảm giác an toàn trong tình cảm</li>
+                            <li>Thích khám phá triết lý về tình yêu</li>
+                            <li>Có xu hướng bảo vệ cảm xúc của mình</li>
+                            <li>Tìm kiếm ý nghĩa sâu xa trong mối quan hệ</li>
+                            <li>Giá trị tri thức và học hỏi trong tình yêu</li>
+                        </ul>
+                    </div>
+                    <div class="examples">
+                        <h4>Trong tình yêu</h4>
+                        <div class="example-item">
+                            <div class="example-title">Cách yêu:</div>
+                            Bạn cần thời gian để mở lòng, nhưng một khi tin tưởng thì rất chung thủy và bảo vệ mối quan
+                            hệ.
+                        </div>
+                        <div class="example-item">
+                            <div class="example-title">Sở thích chung:</div>
+                            Bạn thích những cuộc trò chuyện sâu sắc về cuộc sống, du lịch khám phá, học hỏi cùng nhau.
+                        </div>
+                        <div class="example-item">
+                            <div class="example-title">Khi bị tổn thương:</div>
+                            Bạn có xu hướng "rút vỏ ốc", cần không gian riêng để chữa lành và suy ngẫm.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Sao Hỏa -->
             <div class="section mars">
                 <div class="planet-header">
                     <div class="planet-icon" style="background: linear-gradient(135deg, #f44336, #d32f2f);">♂</div>
                     <div class="planet-title">
-                        <div class="planet-name">Sao Hỏa trong Sư Tử</div>
+                        <div class="planet-name">Mars Sư Tử</div>
                         <div class="planet-position">29°49' - Nhà 10 (Sự nghiệp & Danh tiếng)</div>
                     </div>
                 </div>
@@ -1043,7 +1035,7 @@
                 <div class="planet-header">
                     <div class="planet-icon" style="background: linear-gradient(135deg, #4caf50, #388e3c);">♃</div>
                     <div class="planet-title">
-                        <div class="planet-name">Sao Mộc trong Xử Nữ</div>
+                        <div class="planet-name">Jupiter Xử Nữ</div>
                         <div class="planet-position">20°19' - Nhà 11 (Bạn bè & Ước mơ)</div>
                     </div>
                 </div>
@@ -1081,7 +1073,7 @@
                 <div class="planet-header">
                     <div class="planet-icon" style="background: linear-gradient(135deg, #795548, #5d4037);">♄</div>
                     <div class="planet-title">
-                        <div class="planet-name">Sao Thổ trong Cự Giải (Nghịch hành)</div>
+                        <div class="planet-name">Saturn Cự Giải (Nghịch hành)</div>
                         <div class="planet-position">20°56' - Nhà 9 (Triết lý & Học tập)</div>
                     </div>
                 </div>
@@ -1119,7 +1111,7 @@
                 <div class="planet-header">
                     <div class="planet-icon" style="background: linear-gradient(135deg, #00bcd4, #0097a7);">♅</div>
                     <div class="planet-title">
-                        <div class="planet-name">Sao Thiên Vương trong Song Ngư (Nghịch hành)</div>
+                        <div class="planet-name">Uranus Song Ngư (Nghịch hành)</div>
                         <div class="planet-position">5°30' - Nhà 5 (Sáng tạo & Tình yêu)</div>
                     </div>
                 </div>
@@ -1157,7 +1149,7 @@
                 <div class="planet-header">
                     <div class="planet-icon" style="background: linear-gradient(135deg, #3f51b5, #303f9f);">♆</div>
                     <div class="planet-title">
-                        <div class="planet-name">Sao Hải Vương trong Bảo Bình (Nghịch hành)</div>
+                        <div class="planet-name">Neptune Bảo Bình (Nghịch hành)</div>
                         <div class="planet-position">13°53' - Nhà 4 (Gia đình & Nội tâm)</div>
                     </div>
                 </div>
@@ -1195,7 +1187,7 @@
                 <div class="planet-header">
                     <div class="planet-icon" style="background: linear-gradient(135deg, #9e9e9e, #616161);">♇</div>
                     <div class="planet-title">
-                        <div class="planet-name">Sao Diêm Vương trong Nhân Mã (Nghịch hành)</div>
+                        <div class="planet-name">Pluto Nhân Mã (Nghịch hành)</div>
                         <div class="planet-position">19°39' - Nhà 2 (Tài sản & Giá trị)</div>
                     </div>
                 </div>
@@ -1227,43 +1219,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section venus">
-                <div class="planet-header">
-                    <div class="planet-icon" style="background: linear-gradient(135deg, #e91e63, #c2185b);">♀</div>
-                    <div class="planet-title">
-                        <div class="planet-name">Sao Kim trong Cử Giải</div>
-                        <div class="planet-position">2°22' - Nhà 9 (Triết lý & Học tập)</div>
-                    </div>
-                </div>
-                <div class="content-grid">
-                    <div class="traits">
-                        <h4>Tình yêu & Giá trị</h4>
-                        <ul class="trait-list">
-                            <li>Cần cảm giác an toàn trong tình cảm</li>
-                            <li>Thích khám phá triết lý về tình yêu</li>
-                            <li>Có xu hướng bảo vệ cảm xúc của mình</li>
-                            <li>Tìm kiếm ý nghĩa sâu xa trong mối quan hệ</li>
-                            <li>Giá trị tri thức và học hỏi trong tình yêu</li>
-                        </ul>
-                    </div>
-                    <div class="examples">
-                        <h4>Trong tình yêu</h4>
-                        <div class="example-item">
-                            <div class="example-title">Cách yêu:</div>
-                            Bạn cần thời gian để mở lòng, nhưng một khi tin tưởng thì rất chung thủy và bảo vệ mối quan
-                            hệ.
-                        </div>
-                        <div class="example-item">
-                            <div class="example-title">Sở thích chung:</div>
-                            Bạn thích những cuộc trò chuyện sâu sắc về cuộc sống, du lịch khám phá, học hỏi cùng nhau.
-                        </div>
-                        <div class="example-item">
-                            <div class="example-title">Khi bị tổn thương:</div>
-                            Bạn có xu hướng "rút vỏ ốc", cần không gian riêng để chữa lành và suy ngẫm.
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- Các Góc Chiếu (Aspects) -->
             <div class="aspects-section" style="margin-top: 40px;">
@@ -1493,219 +1449,231 @@
                         <div class="planet-icon" style="background: linear-gradient(135deg, #e91e63, #c2185b);">⚖️</div>
                         <div class="planet-title">
                             <div class="planet-name">Mâu Thuẫn Cốt Lõi: Sư Tử vs Song Tử</div>
-                            <div class="planet-position">Sun Leo (House 10) ⚡ Moon Gemini (House 8)</div>
+                            <div class="planet-position">Sun Sư Tử (Nhà 10) ⚡ Moon Song Tử (Nhà 8)</div>
                         </div>
                     </div>
                     <div class="content-grid">
                         <div class="traits">
-                            <h4>🔥 Mặt Trời Sư Tử - "CEO Mode"</h4>
+                            <h4>🔥 Sun Sư Tử - "Chế độ CEO"</h4>
                             <ul class="trait-list">
                                 <li><strong>Muốn nổi bật:</strong> "Tôi cần được nhìn thấy và công nhận!"</li>
-                                <li><strong>Leadership energy:</strong> Thích dẫn dắt, ra quyết định</li>
-                                <li><strong>Public persona:</strong> Cần có danh tiếng trong sự nghiệp</li>
-                                <li><strong>Creative expression:</strong> Muốn để lại dấu ấn cá nhân</li>
+                                <li><strong>Khả năng lãnh đạo:</strong> Thích dẫn dắt, đưa ra quyết định</li>
+                                <li><strong>Thương hiệu cá nhân:</strong> Cần có danh tiếng trong sự nghiệp</li>
+                                <li><strong>Thể hiện sáng tạo:</strong> Muốn để lại dấu ấn cá nhân</li>
                             </ul>
                         </div>
                         <div class="examples">
-                            <h4>🧠 Mặt Trăng Song Tử - "Detective Mode"</h4>
+                            <h4>🧠 Moon Song Tử - "Chế độ Thám Tử"</h4>
                             <div class="example-item">
                                 <div class="example-title">Quan sát thầm lặng:</div>
-                                "Tôi thích ngồi góc quán cafe, quan sát người ta và phân tích tâm lý họ."
+                                "Tôi thích ngồi ở góc quán cà phê, quan sát người khác và phân tích tâm lý họ."
                             </div>
                             <div class="example-item">
                                 <div class="example-title">Khám phá bí ẩn:</div>
-                                "Tôi bị fascinate bởi những gì ẩn giấu - dark web, conspiracy theories, human
-                                psychology."
+                                "Tôi bị cuốn hút bởi những điều ẩn giấu – dark web, thuyết âm mưu, tâm lý con người."
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Kết quả:</div>
-                                Bạn là "CEO thích làm detective" - muốn lead nhưng cũng muốn investigate từ behind the
-                                scenes.
+                                <div class="example-title">Kết luận:</div>
+                                Bạn là kiểu "CEO thích làm thám tử" – muốn lãnh đạo nhưng cũng thích điều tra phía sau
+                                hậu
+                                trường.
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Mâu thuẫn logic vs trực giác -->
+                <!-- Mâu thuẫn Thực Tế vs Mơ Mộng -->
                 <div class="section contradiction-secondary">
                     <div class="planet-header">
                         <div class="planet-icon" style="background: linear-gradient(135deg, #03a9f4, #0288d1);">🌊</div>
                         <div class="planet-title">
                             <div class="planet-name">Thực Tế vs Mơ Mộng</div>
-                            <div class="planet-position">Mercury/Jupiter Virgo ⚡ Moon-Neptune Aspect</div>
+                            <div class="planet-position">MercuryJupiter Xử Nữ ⚡ Moon – Neptune</div>
                         </div>
                     </div>
                     <div class="content-grid">
                         <div class="traits">
-                            <h4>📊 Team Logic & System</h4>
+                            <h4>📊 Team Lý Trí & Hệ Thống</h4>
                             <ul class="trait-list">
-                                <li><strong>Mercury Xử Nữ:</strong> "Show me the data!"</li>
-                                <li><strong>Jupiter Xử Nữ:</strong> "Mọi thứ phải có hệ thống logic"</li>
+                                <li><strong>Mercury Xử Nữ:</strong> "Cho tôi dữ liệu đi!"</li>
+                                <li><strong>Jupiter Xử Nữ:</strong> "Mọi thứ phải có hệ thống và logic"</li>
                                 <li><strong>IQ 130:</strong> Phân tích cực kỳ chi tiết</li>
-                                <li><strong>Perfection-seeking:</strong> Không thể chấp nhận "sương sương"</li>
+                                <li><strong>Cầu toàn:</strong> Không thể chấp nhận kiểu làm việc qua loa</li>
                             </ul>
                         </div>
                         <div class="examples">
-                            <h4>🔮 Team Intuition & Dreams</h4>
+                            <h4>🔮 Team Trực Giác & Mộng Mơ</h4>
                             <div class="example-item">
-                                <div class="example-title">Moon-Neptune tam hợp:</div>
-                                "Tôi có những linh cảm cực mạnh, đôi khi chính xác đến đáng sợ."
+                                <div class="example-title">Mặt Trăng – Neptune tam hợp:</div>
+                                "Tôi có những linh cảm cực kỳ mạnh mẽ, đôi khi chính xác đến mức đáng sợ."
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Sun-Neptune đối đỉnh:</div>
-                                "Đôi khi tôi đắm chìm trong những lý tưởng lớn lao, quên mất thực tế."
+                                <div class="example-title">Mặt Trời – Neptune đối đỉnh:</div>
+                                "Có lúc tôi chìm đắm trong những lý tưởng quá lớn và quên mất thực tế."
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Internal conflict:</div>
-                                "Trực giác nói A, nhưng data chỉ ra B - tôi nên tin cái nào?"
+                                <div class="example-title">Mâu thuẫn nội tâm:</div>
+                                "Trực giác mách bảo A, nhưng dữ liệu lại chỉ B – tôi nên tin cái nào?"
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Mâu thuẫn kiểm soát vs tự do -->
+                <!-- Mâu thuẫn Kiểm Soát vs Tự Do -->
                 <div class="section contradiction-secondary">
                     <div class="planet-header">
                         <div class="planet-icon" style="background: linear-gradient(135deg, #ff5722, #d84315);">⚡</div>
                         <div class="planet-title">
                             <div class="planet-name">Kiểm Soát vs Tự Do</div>
-                            <div class="planet-position">Venus/Saturn Cancer ⚡ Mars-Uranus Opposition</div>
+                            <div class="planet-position">Venus/Saturn Cự Giải ⚡ Mars – Uranus đối đỉnh</div>
                         </div>
                     </div>
                     <div class="content-grid">
                         <div class="traits">
-                            <h4>🛡️ Team Security & Control</h4>
+                            <h4>🛡️ Team An Toàn & Kiểm Soát</h4>
                             <ul class="trait-list">
-                                <li><strong>Venus Cự Giải:</strong> "Tôi cần cảm thấy an toàn trong tình yêu"</li>
-                                <li><strong>Saturn Cự Giải:</strong> "Mọi thứ phải có kế hoạch, có backup plan"</li>
-                                <li><strong>Stability-seeking:</strong> Thích môi trường dự đoán được</li>
-                                <li><strong>Long-term thinking:</strong> Nghĩ về tương lai 5-10 năm</li>
+                                <li><strong>Venus Cự Giải:</strong> "Tôi cần cảm thấy an toàn trong tình cảm"</li>
+                                <li><strong>Saturn Cự Giải:</strong> "Mọi thứ cần có kế hoạch và phương án dự phòng"
+                                </li>
+                                <li><strong>Tìm kiếm sự ổn định:</strong> Ưa môi trường có thể đoán trước được</li>
+                                <li><strong>Tư duy dài hạn:</strong> Luôn suy nghĩ về 5–10 năm sau</li>
                             </ul>
                         </div>
                         <div class="examples">
-                            <h4>🚀 Team Freedom & Rebellion</h4>
+                            <h4>🚀 Team Tự Do & Nổi Loạn</h4>
                             <div class="example-item">
-                                <div class="example-title">Mars-Uranus đối đỉnh:</div>
-                                "Tôi ghét bị ai đó kiểm soát hoặc đặt ra rules vô lý!"
+                                <div class="example-title">Mars – Uranus đối đỉnh:</div>
+                                "Tôi ghét bị kiểm soát hoặc phải tuân theo những quy tắc vô lý!"
                             </div>
                             <div class="example-item">
                                 <div class="example-title">Uranus nhà 5:</div>
-                                "Tôi muốn sáng tạo theo cách riêng, không theo khuôn mẫu."
+                                "Tôi muốn sáng tạo theo cách của riêng mình, không theo bất kỳ khuôn mẫu nào."
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Dilemma:</div>
-                                "Tôi muốn 'controlled freedom' - tự do nhưng vẫn an toàn. Sounds impossible?"
+                                <div class="example-title">Tiến thoái lưỡng nan:</div>
+                                "Tôi muốn một kiểu 'tự do có kiểm soát' – được bay nhảy nhưng vẫn cảm thấy an toàn. Nghe
+                                có
+                                vẻ bất khả thi nhỉ?"
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Mâu thuẫn ổn định vs biến đổi -->
+                <!-- Mâu thuẫn Ổn Định vs Biến Đổi -->
                 <div class="section contradiction-special">
                     <div class="planet-header">
                         <div class="planet-icon" style="background: linear-gradient(135deg, #9c27b0, #7b1fa2);">🔄</div>
                         <div class="planet-title">
                             <div class="planet-name">Ổn Định vs Biến Đổi</div>
-                            <div class="planet-position">Sun-Moon Harmony ⚡ Pluto Aspects</div>
+                            <div class="planet-position">Sun – Moon hòa hợp ⚡ Các góc Pluto</div>
                         </div>
                     </div>
                     <div class="content-grid">
                         <div class="traits">
-                            <h4>🏠 Team Stability & Peace</h4>
+                            <h4>🏠 Team Ổn Định & Hòa Bình</h4>
                             <ul class="trait-list">
-                                <li><strong>Sun-Moon lục hợp:</strong> "Tôi cần sự cân bằng, hài hòa"</li>
-                                <li><strong>Natural harmony:</strong> Không thích drama, conflict</li>
-                                <li><strong>Peaceful environment:</strong> Cần không gian yên tĩnh để phát triển</li>
-                                <li><strong>Consistent growth:</strong> Thích progress đều đặn</li>
+                                <li><strong>Sun – Moon lục hợp:</strong> "Tôi cần sự cân bằng và hòa hợp"</li>
+                                <li><strong>Hài hòa tự nhiên:</strong> Không thích cãi vã hay drama</li>
+                                <li><strong>Môi trường yên tĩnh:</strong> Cần không gian tĩnh lặng để phát triển</li>
+                                <li><strong>Tiến bộ bền vững:</strong> Thích sự phát triển đều đặn và chắc chắn</li>
                             </ul>
                         </div>
                         <div class="examples">
-                            <h4>💥 Team Transformation & Intensity</h4>
+                            <h4>💥 Team Biến Đổi & Cường Độ</h4>
                             <div class="example-item">
-                                <div class="example-title">Moon-Pluto đối đỉnh:</div>
-                                "Đôi khi tôi cần những cảm xúc intense, transformative experiences."
+                                <div class="example-title">Mặt Trăng – Pluto đối đỉnh:</div>
+                                "Đôi khi tôi cần những cảm xúc mãnh liệt, những trải nghiệm mang tính biến đổi."
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Sun-Pluto tam hợp:</div>
-                                "Tôi bị thu hút bởi crisis, challenges lớn - nó giúp tôi 'evolve'."
+                                <div class="example-title">Mặt Trời – Pluto tam hợp:</div>
+                                "Tôi bị cuốn hút bởi khủng hoảng, thử thách lớn – chúng giúp tôi 'tiến hóa'."
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Paradox:</div>
-                                "Tôi vừa cần peace để recharge, vừa cần chaos để grow. Confusing much?"
+                                <div class="example-title">Nghịch lý:</div>
+                                "Tôi vừa cần sự bình yên để nạp năng lượng, vừa cần hỗn loạn để trưởng thành. Nghe rối
+                                thật
+                                đấy!"
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- LLI Paradox -->
+                <!-- Nghịch Lý LLI -->
                 <div class="section contradiction-special">
                     <div class="planet-header">
                         <div class="planet-icon" style="background: linear-gradient(135deg, #607d8b, #455a64);">🧬</div>
                         <div class="planet-title">
-                            <div class="planet-name">The LLI Paradox</div>
-                            <div class="planet-position">High IQ + Mercury Retrograde ⚡ Low Latent Inhibition</div>
+                            <div class="planet-name">Low Latent Inhibition</div>
+                            <div class="planet-position">IQ cao + Mercury nghịch hành ⚡ Khả năng lọc thông tin thấp
+                                (LLI)
+                            </div>
                         </div>
                     </div>
                     <div class="content-grid">
                         <div class="traits">
-                            <h4>🎯 Team Careful Processing</h4>
+                            <h4>🎯 Team Xử Lý Thận Trọng</h4>
                             <ul class="trait-list">
-                                <li><strong>Mercury nghịch hành:</strong> "Tôi cần suy nghĩ kỹ trước khi nói"</li>
-                                <li><strong>High IQ:</strong> Phân tích từng layer của vấn đề</li>
-                                <li><strong>Perfectionist tendency:</strong> Muốn output hoàn hảo</li>
-                                <li><strong>Quality over speed:</strong> Thích làm chậm nhưng chuẩn</li>
+                                <li><strong>Mercury nghịch hành:</strong> "Tôi cần suy nghĩ kỹ trước khi nói ra điều gì
+                                    đó"
+                                </li>
+                                <li><strong>IQ cao:</strong> Phân tích từng lớp vấn đề một cách sâu sắc</li>
+                                <li><strong>Xu hướng cầu toàn:</strong> Muốn sản phẩm đầu ra phải thật hoàn hảo</li>
+                                <li><strong>Chất lượng hơn tốc độ:</strong> Thích làm chậm mà chắc, hơn là nhanh mà ẩu
+                                </li>
                             </ul>
                         </div>
                         <div class="examples">
-                            <h4>🌈 Team Information Overload</h4>
+                            <h4>🌈 Team Quá Tải Thông Tin</h4>
                             <div class="example-item">
-                                <div class="example-title">Low Latent Inhibition:</div>
-                                "Não tôi process TẤT CẢ thông tin cùng lúc - từ tiếng xe đến pattern trong code."
+                                <div class="example-title">Khả năng lọc thông tin thấp (LLI):</div>
+                                "Não tôi xử lý MỌI THỨ cùng lúc – từ tiếng xe ngoài đường đến pattern trong đoạn code."
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Pattern recognition:</div>
-                                "Tôi thấy connections mà người khác miss, nhưng đôi khi overwhelm."
+                                <div class="example-title">Nhận diện mẫu (pattern):</div>
+                                "Tôi nhìn thấy các mối liên kết mà người khác bỏ lỡ – nhưng đôi khi lại quá tải vì thế."
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Mental fatigue:</div>
-                                "Genius insights vs mental exhaustion - đó là trade-off hàng ngày."
+                                <div class="example-title">Mệt mỏi tinh thần:</div>
+                                "Những nghĩ nhiều đi kèm với kiệt sức – đó là cái giá phải trả mỗi ngày."
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Love Contradiction -->
                 <div class="section contradiction-special">
                     <div class="planet-header">
                         <div class="planet-icon" style="background: linear-gradient(135deg, #e91e63, #ad1457);">💝</div>
                         <div class="planet-title">
-                            <div class="planet-name">Love Contradiction</div>
-                            <div class="planet-position">Venus Cancer ⚡ Venus-Uranus Trine</div>
+                            <div class="planet-name">Mâu Thuẫn Trong Tình Yêu</div>
+                            <div class="planet-position">Venus Cự Giải ⚡ Venus – Uranus tam hợp</div>
                         </div>
                     </div>
                     <div class="content-grid">
                         <div class="traits">
-                            <h4>🏰 Team Stable Love</h4>
+                            <h4>🏰 Team Tình Yêu Ổn Định</h4>
                             <ul class="trait-list">
-                                <li><strong>Venus Cự Giải:</strong> "Tôi cần partner chung thủy, đáng tin cậy"</li>
-                                <li><strong>Long-term commitment:</strong> Muốn build future cùng nhau</li>
-                                <li><strong>Family-oriented:</strong> Tình yêu phải có potential thành gia đình</li>
-                                <li><strong>Emotional security:</strong> Cần cảm thấy được yêu thương, bảo vệ</li>
+                                <li><strong>Venus Cự Giải:</strong> "Tôi cần một người bạn đời chung thủy và đáng tin"
+                                </li>
+                                <li><strong>Cam kết lâu dài:</strong> Muốn cùng nhau xây dựng tương lai</li>
+                                <li><strong>Hướng về gia đình:</strong> Tình yêu phải có khả năng tiến tới hôn nhân</li>
+                                <li><strong>An toàn cảm xúc:</strong> Cần cảm giác được yêu thương và bảo vệ</li>
                             </ul>
                         </div>
                         <div class="examples">
-                            <h4>🦋 Team Exciting Love</h4>
+                            <h4>🦋 Team Tình Yêu Kích Thích</h4>
                             <div class="example-item">
-                                <div class="example-title">Venus-Uranus tam hợp:</div>
-                                "Nhưng tôi lại bị attract bởi những người độc đáo, unpredictable!"
+                                <div class="example-title">Venus – Uranus tam hợp:</div>
+                                "Nhưng tôi lại bị thu hút bởi những người độc lạ, khó đoán!"
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Bored with normal:</div>
-                                "Người quá 'bình thường' làm tôi cảm thấy uninspired."
+                                <div class="example-title">Chán sự bình thường:</div>
+                                "Người quá 'bình thường' khiến tôi thấy mất cảm hứng."
                             </div>
                             <div class="example-item">
-                                <div class="example-title">Mission impossible:</div>
-                                "Tôi cần một 'stable rebel' - người vừa reliable vừa exciting. Good luck finding that!"
+                                <div class="example-title">Nhiệm vụ bất khả thi:</div>
+                                "Tôi cần một người 'nổi loạn ổn định' – vừa đáng tin cậy vừa thú vị. Kiếm đâu ra giờ?!"
                             </div>
                         </div>
                     </div>
@@ -1716,42 +1684,61 @@
                     <h3>🎯 Cách Hòa Giải Những Mâu Thuẫn</h3>
                     <div
                         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin-top: 20px;">
+
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
-                            <h4 style="color: #FFD700; margin-bottom: 15px;">🎭 Leo-Gemini Integration:</h4>
-                            <p>Trở thành <strong>"thought leader"</strong> - shine through insights, không chỉ
-                                performance. Start a blog về cybersecurity, podcast về fintech trends. Bạn sẽ được
-                                noticed nhờ intelligence, không chỉ charisma.</p>
+                            <h4 style="color: #FFD700; margin-bottom: 15px;">🎭 Hòa Hợp Sư Tử - Song Tử:</h4>
+                            <p>Trở thành <strong>“người dẫn dắt bằng tư duy”</strong> – tỏa sáng qua sự hiểu biết, không
+                                chỉ
+                                qua biểu hiện. Hãy bắt đầu một blog về an ninh mạng, hoặc podcast chia sẻ về các xu
+                                hướng
+                                fintech. Bạn sẽ được chú ý nhờ trí tuệ, không chỉ nhờ sự thu hút.</p>
                         </div>
+
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
-                            <h4 style="color: #FFD700; margin-bottom: 15px;">🌊 Logic-Intuition Balance:</h4>
-                            <p>Use <strong>data to validate intuition</strong>. Trong cybersecurity, gut feeling + data
-                                analysis = siêu sức mạnh. Trust your hunches, nhưng backup bằng evidence.</p>
+                            <h4 style="color: #FFD700; margin-bottom: 15px;">🌊 Cân Bằng Lý Trí - Trực Giác:</h4>
+                            <p>Sử dụng <strong>dữ liệu để xác thực trực giác</strong>. Trong lĩnh vực an ninh mạng, cảm
+                                giác
+                                + phân tích dữ liệu = siêu năng lực. Hãy tin vào linh cảm của mình, nhưng luôn có bằng
+                                chứng
+                                hỗ trợ.</p>
                         </div>
+
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
-                            <h4 style="color: #FFD700; margin-bottom: 15px;">⚡ Control-Freedom Solution:</h4>
-                            <p>Create <strong>"structured adventures"</strong> - freelancing, remote work, own startup
-                                trong framework có planning. Tự do nhưng có safety net.</p>
+                            <h4 style="color: #FFD700; margin-bottom: 15px;">⚡ Giải Pháp Kiểm Soát – Tự Do:</h4>
+                            <p>Tạo ra các <strong>"cuộc phiêu lưu có cấu trúc"</strong> – như làm freelancer, làm việc
+                                từ
+                                xa, hoặc startup riêng trong một khung có kế hoạch rõ ràng. Tự do nhưng có lưới an toàn.
+                            </p>
                         </div>
+
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
-                            <h4 style="color: #FFD700; margin-bottom: 15px;">🧬 LLI Management:</h4>
-                            <p>Develop <strong>filtering systems</strong>: mindfulness meditation, journaling, focused
-                                work sessions. Use noise-canceling headphones, create "processing breaks" giữa các
-                                tasks.</p>
+                            <h4 style="color: #FFD700; margin-bottom: 15px;">🧬 Quản Lý LLI:</h4>
+                            <p>Phát triển <strong>hệ thống lọc thông tin</strong>: thiền chánh niệm, viết nhật ký, các
+                                phiên
+                                làm việc tập trung. Dùng tai nghe chống ồn, tạo “khoảng nghỉ xử lý” giữa các nhiệm vụ.
+                            </p>
                         </div>
+
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
-                            <h4 style="color: #FFD700; margin-bottom: 15px;">🔄 Stability-Change Balance:</h4>
-                            <p>Plan for <strong>"controlled transformations"</strong> - set yearly "evolution goals". Ví
-                                dụ: học skill mới mỗi 6 tháng, thay đổi environment nhưng keep core routines.</p>
+                            <h4 style="color: #FFD700; margin-bottom: 15px;">🔄 Cân Bằng Ổn Định – Biến Đổi:</h4>
+                            <p>Lên kế hoạch cho các <strong>"cuộc biến hóa có kiểm soát"</strong> – đặt ra mục tiêu
+                                “tiến
+                                hóa” mỗi năm. Ví dụ: học một kỹ năng mới mỗi 6 tháng, thay đổi môi trường sống nhưng vẫn
+                                giữ
+                                các thói quen cốt lõi.</p>
                         </div>
+
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
-                            <h4 style="color: #FFD700; margin-bottom: 15px;">💝 Love Strategy:</h4>
-                            <p>Tìm <strong>"intellectual rebels"</strong> - người có stable career nhưng unique
-                                perspectives. Think: professor nghiên cứu AI ethics, doctor làm telemedicine, artist làm
-                                NFT.</p>
+                            <h4 style="color: #FFD700; margin-bottom: 15px;">💝 Chiến Lược Tình Yêu:</h4>
+                            <p>Hãy tìm những <strong>"người nổi loạn trí tuệ"</strong> – người có sự nghiệp ổn định
+                                nhưng
+                                góc nhìn độc đáo. Ví dụ: giáo sư nghiên cứu về đạo đức AI, bác sĩ làm telemedicine, hoặc
+                                nghệ sĩ theo đuổi NFT.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="practical-applications" style="margin-top: 40px;">
                 <h2
                     style="text-align: center; color: #667eea; font-size: 2.2em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
@@ -1769,29 +1756,35 @@
                         </div>
                         <div class="practical-content">
                             <div class="current-info">
-                                <strong>Hiện tại:</strong> IT, Tài chính, An ninh mạng | IQ 130 + Low Latent Inhibition
+                                <strong>Hiện tại:</strong> IT, Tài chính, An ninh mạng | IQ 130 + LLI (Low Latent
+                                Inhibition)
                             </div>
                             <div class="astrological-match">
                                 <h4>🔮 Phân tích chiêm tinh:</h4>
                                 <ul>
-                                    <li><strong>Mercury Xử Nữ nghịch hành (nhà 11):</strong> Thích phân tích chi tiết,
-                                        học theo hệ thống logic</li>
-                                    <li><strong>Moon Song Tử (nhà 8):</strong> Tò mò về những kiến thức sâu kín, bí ẩn
+                                    <li><strong>Mercury Xử Nữ (nhà 11, nghịch hành):</strong> Tư duy phân tích, học theo
+                                        lối
+                                        logic – hệ thống</li>
+                                    <li><strong>Moon Song Tử (nhà 8):</strong> Thích khám phá các kiến thức sâu, bí ẩn
                                     </li>
-                                    <li><strong>Jupiter Xử Nữ (nhà 11):</strong> Học tốt trong môi trường nhóm, thích
-                                        hoàn thiện</li>
+                                    <li><strong>Jupiter Xử Nữ (nhà 11):</strong> Học tốt trong nhóm, luôn muốn hoàn
+                                        thiện
+                                    </li>
                                 </ul>
                             </div>
                             <div class="practical-examples">
                                 <h4>💡 Cách học hiệu quả:</h4>
                                 <ul>
-                                    <li><strong>Kết hợp nhiều lĩnh vực:</strong> IT + Tài chính + An ninh = Fintech
-                                        Security (hoàn hảo cho bạn!)</li>
-                                    <li><strong>Deep dive learning:</strong> Không học nông, mà đào sâu từng chủ đề</li>
-                                    <li><strong>Pattern recognition:</strong> LLI giúp bạn nhận ra mẫu hình mà người
-                                        khác bỏ qua</li>
-                                    <li><strong>Research-based:</strong> Thích tìm hiểu "tại sao" hơn là "làm thế nào"
+                                    <li><strong>Liên ngành:</strong> IT + Tài chính + An ninh = Fintech Security (cực kỳ
+                                        phù
+                                        hợp)</li>
+                                    <li><strong>Học chuyên sâu:</strong> Tập trung đào sâu 1 chủ đề một cách toàn diện
                                     </li>
+                                    <li><strong>Nhận diện mẫu hình:</strong> LLI giúp bạn "thấy" những thứ người khác bỏ
+                                        qua
+                                    </li>
+                                    <li><strong>Phong cách nghiên cứu:</strong> Quan tâm đến bản chất vấn đề hơn là công
+                                        thức</li>
                                 </ul>
                             </div>
                         </div>
@@ -1801,27 +1794,29 @@
                     <div class="practical-card love-type">
                         <div class="practical-header">
                             <span class="practical-icon">💕</span>
-                            <h3>Gu Người Yêu Lý Tưởng</h3>
+                            <h3>Gu Người Yêu</h3>
                         </div>
                         <div class="practical-content">
                             <div class="astrological-match">
-                                <h4>🔮 Dựa trên Venus Cự Giải (nhà 9) + các aspects:</h4>
+                                <h4>🔮 Dựa trên Venus Cự Giải (nhà 9) và các góc chiếu:</h4>
                                 <ul>
-                                    <li><strong>Venus-Uranus tam hợp:</strong> Thích người độc đáo, không theo khuôn mẫu
-                                    </li>
-                                    <li><strong>Venus nhà 9:</strong> Người có tri thức, thích khám phá</li>
-                                    <li><strong>Venus Cự Giải:</strong> Cần cảm giác an toàn, chung thủy</li>
+                                    <li><strong>Venus-Uranus tam hợp:</strong> Thích người khác biệt, tư duy tự do</li>
+                                    <li><strong>Venus nhà 9:</strong> Yêu thích tri thức, tò mò văn hóa & thế giới</li>
+                                    <li><strong>Venus Cự Giải:</strong> Cần kết nối cảm xúc an toàn và bền vững</li>
                                 </ul>
                             </div>
                             <div class="ideal-partner">
-                                <h4>👤 Chân dung người yêu lý tưởng:</h4>
+                                <h4>👤 Gu người yêu chi tiết:</h4>
                                 <ul>
-                                    <li><strong>Trí tuệ:</strong> IQ cao, có thể trò chuyện sâu về nhiều chủ đề</li>
-                                    <li><strong>Độc lập:</strong> Có cuộc sống riêng, không dựa dẫm</li>
-                                    <li><strong>Tò mò:</strong> Thích khám phá, học hỏi, có tư duy phản biện</li>
-                                    <li><strong>Chung thủy:</strong> Nghiêm túc với mối quan hệ, có trách nhiệm</li>
-                                    <li><strong>Có chiều sâu:</strong> Hiểu được tâm lý, không nông cạn</li>
-                                    <li><strong>Khác biệt:</strong> Có cái gì đó "lạ" so với số đông</li>
+                                    <li><strong>Thông minh:</strong> Có thể trò chuyện sâu sắc, mở rộng nhận thức</li>
+                                    <li><strong>Độc lập:</strong> Có sự nghiệp riêng, không kiểm soát hoặc phụ thuộc
+                                    </li>
+                                    <li><strong>Ham học hỏi:</strong> Luôn tò mò, có tư duy phản biện</li>
+                                    <li><strong>Chân thành:</strong> Trung thực, đáng tin cậy, nghiêm túc trong mối quan
+                                        hệ
+                                    </li>
+                                    <li><strong>Có chiều sâu nội tâm:</strong> Hiểu cảm xúc và tâm lý người khác</li>
+                                    <li><strong>Độc đáo:</strong> Có "chất riêng", không giống số đông</li>
                                 </ul>
                             </div>
                         </div>
@@ -1835,25 +1830,27 @@
                         </div>
                         <div class="practical-content">
                             <div class="astrological-match">
-                                <h4>🔮 Phân tích từ Venus + Moon + Mars:</h4>
+                                <h4>🔮 Dựa trên Venus + Moon + Mars:</h4>
                                 <ul>
-                                    <li><strong>Venus-Mars lục hợp:</strong> Cân bằng giữa dịu dàng và mạnh mẽ</li>
-                                    <li><strong>Moon nhà 8:</strong> Yêu sâu sắc, thích khám phá tâm hồn đối phương</li>
-                                    <li><strong>Sun-Moon lục hợp:</strong> Thống nhất giữa lý trí và cảm xúc</li>
+                                    <li><strong>Venus-Mars lục hợp:</strong> Biết cân bằng giữa dịu dàng và quyết đoán
+                                    </li>
+                                    <li><strong>Moon nhà 8:</strong> Cảm xúc mãnh liệt, kết nối tâm hồn sâu sắc</li>
+                                    <li><strong>Sun-Moon lục hợp:</strong> Không xung đột giữa lý trí và cảm xúc</li>
                                 </ul>
                             </div>
                             <div class="love-characteristics">
-                                <h4>💖 Cách bạn thể hiện tình yêu:</h4>
+                                <h4>💖 Khi yêu, bạn thường:</h4>
                                 <ul>
-                                    <li><strong>Giai đoạn đầu:</strong> Thận trọng, cần thời gian quan sát và hiểu người
-                                        kia</li>
-                                    <li><strong>Khi yêu:</strong> Rất chung thủy, bảo vệ mối quan hệ như báu vật</li>
-                                    <li><strong>Cách quan tâm:</strong> Lắng nghe sâu, phân tích tâm lý, đưa ra lời
-                                        khuyên thực tế</li>
-                                    <li><strong>Trong xung đột:</strong> Cần không gian riêng để suy nghĩ, không thích
-                                        tranh cãi gay gắt</li>
-                                    <li><strong>Tình yêu lâu dài:</strong> Thích phát triển cùng nhau, học hỏi lẫn nhau
+                                    <li><strong>Ban đầu:</strong> Rụt rè, cần thời gian quan sát và hiểu đối phương</li>
+                                    <li><strong>Khi đã yêu:</strong> Chung thủy, coi mối quan hệ là điều thiêng liêng
                                     </li>
+                                    <li><strong>Thể hiện tình cảm:</strong> Qua lắng nghe, phân tích và hành động thực
+                                        tế
+                                    </li>
+                                    <li><strong>Khi mâu thuẫn:</strong> Cần không gian để suy nghĩ, không thích tranh
+                                        luận
+                                        căng thẳng</li>
+                                    <li><strong>Về lâu dài:</strong> Muốn cùng phát triển, trưởng thành cùng nhau</li>
                                 </ul>
                             </div>
                         </div>
@@ -1867,47 +1864,52 @@
                         </div>
                         <div class="practical-content">
                             <div class="current-path">
-                                <strong>Con đường hiện tại:</strong> IT + Tài chính + An ninh mạng (Rất phù hợp!)
+                                <strong>Con đường hiện tại:</strong> IT + Tài chính + An ninh mạng (cực kỳ lý tưởng!)
                             </div>
                             <div class="astrological-match">
-                                <h4>🔮 Tại sao phù hợp:</h4>
+                                <h4>🔮 Vì sao phù hợp:</h4>
                                 <ul>
-                                    <li><strong>Sun Sư Tử (nhà 10):</strong> Muốn thành công, được công nhận trong sự
-                                        nghiệp</li>
-                                    <li><strong>Mercury Xử Nữ:</strong> Khả năng phân tích, debug, tìm lỗi xuất sắc</li>
-                                    <li><strong>Moon nhà 8:</strong> Thích khám phá những điều ẩn giấu (perfect for
-                                        cybersecurity!)</li>
-                                    <li><strong>Pluto nhà 2:</strong> Có thể "biến đổi" về tài chính, hiểu sâu về tiền
-                                        bạc</li>
+                                    <li><strong>Sun Sư Tử (nhà 10):</strong> Tham vọng, muốn được công nhận trong sự
+                                        nghiệp
+                                    </li>
+                                    <li><strong>Mercury Xử Nữ:</strong> Giỏi phân tích, phát hiện lỗi, chi tiết cao</li>
+                                    <li><strong>Moon nhà 8:</strong> Đam mê khám phá bí ẩn – cực hợp với cybersecurity
+                                    </li>
+                                    <li><strong>Pluto nhà 2:</strong> Hiểu sâu sắc về tài chính và các biến động</li>
                                 </ul>
                             </div>
                             <div class="career-paths">
-                                <h4>🎯 Các hướng phát triển cụ thể:</h4>
+                                <h4>🎯 Định hướng nghề nghiệp cụ thể:</h4>
                                 <ul>
-                                    <li><strong>Fintech Security Specialist:</strong> Bảo mật cho ngân hàng số, ví điện
-                                        tử</li>
-                                    <li><strong>Blockchain Security Auditor:</strong> Kiểm tra smart contracts, DeFi
-                                        protocols</li>
-                                    <li><strong>Cybersecurity Consultant:</strong> Tư vấn cho các tổ chức tài chính</li>
-                                    <li><strong>Risk Management Analyst:</strong> Phân tích rủi ro công nghệ trong tài
+                                    <li><strong>Chuyên gia Fintech Security:</strong> Bảo mật hệ thống ngân hàng số</li>
+                                    <li><strong>Kiểm toán Blockchain:</strong> Review smart contract, DeFi protocols
+                                    </li>
+                                    <li><strong>Tư vấn An ninh mạng:</strong> Cho các tổ chức tài chính lớn</li>
+                                    <li><strong>Chuyên viên phân tích rủi ro:</strong> Đánh giá mối nguy công nghệ tài
+                                        chính
+                                    </li>
+                                    <li><strong>Tech Lead/CTO:</strong> Dẫn dắt đội ngũ phát triển sản phẩm công nghệ
+                                        tài
                                         chính</li>
-                                    <li><strong>Tech Lead/CTO:</strong> Dẫn dắt team phát triển sản phẩm fintech</li>
                                 </ul>
                             </div>
                             <div class="lli-advantage">
-                                <h4>🧠 Lợi thế từ LLI + IQ 130:</h4>
+                                <h4>🧠 Ưu thế từ LLI + IQ cao:</h4>
                                 <ul>
-                                    <li><strong>Pattern Recognition:</strong> Phát hiện mối đe dọa mà AI chưa học được
+                                    <li><strong>Nhận diện mẫu hình:</strong> Thấy rủi ro mà AI chưa "được học"</li>
+                                    <li><strong>Tư duy hệ thống:</strong> Nhìn toàn cảnh và mối liên hệ giữa các yếu tố
                                     </li>
-                                    <li><strong>System Thinking:</strong> Nhìn thấy mối liên hệ giữa các hệ thống</li>
-                                    <li><strong>Innovation:</strong> Tạo ra giải pháp độc đáo, không theo khuôn mẫu</li>
-                                    <li><strong>Research Ability:</strong> Đào sâu vào những lĩnh vực mới nổi</li>
+                                    <li><strong>Sáng tạo:</strong> Tạo ra giải pháp độc đáo, không theo lối mòn</li>
+                                    <li><strong>Nghiên cứu chuyên sâu:</strong> Theo đuổi và làm chủ các lĩnh vực mới
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
+
 
             <!-- Tổng hợp -->
             <div class="synthesis">
