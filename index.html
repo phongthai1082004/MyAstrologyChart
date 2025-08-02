@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,14 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -27,24 +28,24 @@
             backdrop-filter: blur(10px);
             overflow: hidden;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #ff6b6b, #ffa726);
             color: white;
             padding: 30px;
             text-align: center;
         }
-        
+
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-        
+
         .content {
             padding: 30px;
         }
-        
+
         .section {
             margin-bottom: 40px;
             background: white;
@@ -54,25 +55,60 @@
             border-left: 5px solid;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .section:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
         }
-        
-        .sun { border-left-color: #ff9800; }
-        .moon { border-left-color: #9c27b0; }
-        .mercury { border-left-color: #03a9f4; }
-        .venus { border-left-color: #e91e63; }
-        .mars { border-left-color: #f44336; }
-        .jupiter { border-left-color: #4caf50; }
-        .contradiction-main { border-left-color: #e91e63; }
-        .contradiction-secondary { border-left-color: #ff5722; }
-        .contradiction-special { border-left-color: #9c27b0; }
-        .uranus { border-left-color: #00bcd4; }
-        .neptune { border-left-color: #3f51b5; }
-        .pluto { border-left-color: #9e9e9e; }
-        
+
+        .sun {
+            border-left-color: #ff9800;
+        }
+
+        .moon {
+            border-left-color: #9c27b0;
+        }
+
+        .mercury {
+            border-left-color: #03a9f4;
+        }
+
+        .venus {
+            border-left-color: #e91e63;
+        }
+
+        .mars {
+            border-left-color: #f44336;
+        }
+
+        .jupiter {
+            border-left-color: #4caf50;
+        }
+
+        .contradiction-main {
+            border-left-color: #e91e63;
+        }
+
+        .contradiction-secondary {
+            border-left-color: #ff5722;
+        }
+
+        .contradiction-special {
+            border-left-color: #9c27b0;
+        }
+
+        .uranus {
+            border-left-color: #00bcd4;
+        }
+
+        .neptune {
+            border-left-color: #3f51b5;
+        }
+
+        .pluto {
+            border-left-color: #9e9e9e;
+        }
+
         .planet-header {
             display: flex;
             align-items: center;
@@ -80,7 +116,7 @@
             padding-bottom: 15px;
             border-bottom: 2px solid #f0f0f0;
         }
-        
+
         .planet-icon {
             width: 50px;
             height: 50px;
@@ -93,95 +129,97 @@
             margin-right: 20px;
             font-weight: bold;
         }
-        
+
         .planet-title {
             flex: 1;
         }
-        
+
         .planet-name {
             font-size: 1.8em;
             font-weight: bold;
             margin-bottom: 5px;
         }
-        
+
         .planet-position {
             color: #666;
             font-size: 1.1em;
         }
-        
+
         .content-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             margin-top: 20px;
         }
-        
-        .traits, .examples {
+
+        .traits,
+        .examples {
             padding: 20px;
             border-radius: 10px;
         }
-        
+
         .traits {
             background: linear-gradient(135deg, #f8f9ff, #e8f0ff);
             border: 1px solid #e0e8ff;
         }
-        
+
         .examples {
             background: linear-gradient(135deg, #fff8f0, #fff0e0);
             border: 1px solid #ffe8d0;
         }
-        
-        .traits h4, .examples h4 {
+
+        .traits h4,
+        .examples h4 {
             color: #333;
             margin-bottom: 15px;
             font-size: 1.2em;
             display: flex;
             align-items: center;
         }
-        
+
         .traits h4::before {
             content: "✨";
             margin-right: 10px;
         }
-        
+
         .examples h4::before {
             content: "💡";
             margin-right: 10px;
         }
-        
+
         .trait-list {
             list-style: none;
         }
-        
+
         .trait-list li {
             background: white;
             margin: 8px 0;
             padding: 12px 15px;
             border-radius: 8px;
             border-left: 3px solid #4CAF50;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             transition: transform 0.2s ease;
         }
-        
+
         .trait-list li:hover {
             transform: translateX(5px);
         }
-        
+
         .example-item {
             background: white;
             margin: 12px 0;
             padding: 15px;
             border-radius: 8px;
             border-left: 3px solid #FF9800;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
-        
+
         .example-title {
             font-weight: bold;
             color: #FF6B35;
             margin-bottom: 8px;
         }
-        
+
         .aspect-card {
             background: white;
             border-radius: 15px;
@@ -189,22 +227,22 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .aspect-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
         }
-        
+
         .aspect-card.positive {
             border-left: 5px solid #4CAF50;
             background: linear-gradient(135deg, #f8fff8, #e8f5e8);
         }
-        
+
         .aspect-card.challenging {
             border-left: 5px solid #FF5722;
             background: linear-gradient(135deg, #fff8f5, #ffe8e0);
         }
-        
+
         .aspect-header {
             display: flex;
             align-items: center;
@@ -212,26 +250,26 @@
             padding-bottom: 10px;
             border-bottom: 2px solid #f0f0f0;
         }
-        
+
         .aspect-symbol {
             font-size: 2em;
             margin-right: 15px;
             width: 50px;
             text-align: center;
         }
-        
+
         .aspect-header h4 {
             font-size: 1.3em;
             color: #333;
             margin-bottom: 5px;
         }
-        
+
         .aspect-type {
             color: #666;
             font-size: 0.9em;
             font-style: italic;
         }
-        
+
         .aspect-content .meaning {
             background: rgba(255, 255, 255, 0.7);
             padding: 12px;
@@ -239,24 +277,24 @@
             margin-bottom: 15px;
             border-left: 3px solid #2196F3;
         }
-        
+
         .aspect-content .examples {
             background: rgba(255, 255, 255, 0.7);
             padding: 12px;
             border-radius: 8px;
             border-left: 3px solid #FF9800;
         }
-        
+
         .aspect-content ul {
             margin: 10px 0;
             padding-left: 20px;
         }
-        
+
         .aspect-content li {
             margin: 8px 0;
             line-height: 1.4;
         }
-        
+
         .practical-card {
             background: white;
             border-radius: 15px;
@@ -266,29 +304,32 @@
             border-left: 5px solid;
             height: fit-content;
         }
-        
+
         .practical-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
-        
-        .practical-card.learning { 
-            border-left-color: #2196F3; 
+
+        .practical-card.learning {
+            border-left-color: #2196F3;
             background: linear-gradient(135deg, #f8fbff, #e3f2fd);
         }
-        .practical-card.love-type { 
-            border-left-color: #E91E63; 
+
+        .practical-card.love-type {
+            border-left-color: #E91E63;
             background: linear-gradient(135deg, #fdf8fc, #fce4ec);
         }
-        .practical-card.love-style { 
-            border-left-color: #FF5722; 
+
+        .practical-card.love-style {
+            border-left-color: #FF5722;
             background: linear-gradient(135deg, #fff8f5, #ffebee);
         }
-        .practical-card.career { 
-            border-left-color: #4CAF50; 
+
+        .practical-card.career {
+            border-left-color: #4CAF50;
             background: linear-gradient(135deg, #f8fff8, #e8f5e8);
         }
-        
+
         .practical-header {
             display: flex;
             align-items: center;
@@ -296,25 +337,26 @@
             padding-bottom: 15px;
             border-bottom: 2px solid #f0f0f0;
         }
-        
+
         .practical-icon {
             font-size: 2.5em;
             margin-right: 15px;
         }
-        
+
         .practical-header h3 {
             color: #333;
             font-size: 1.6em;
             margin: 0;
         }
-        
+
         .practical-content h4 {
             color: #444;
             margin: 15px 0 10px 0;
             font-size: 1.1em;
         }
-        
-        .current-info, .current-path {
+
+        .current-info,
+        .current-path {
             background: rgba(255, 193, 7, 0.1);
             padding: 12px;
             border-radius: 8px;
@@ -322,7 +364,7 @@
             margin-bottom: 15px;
             font-weight: 500;
         }
-        
+
         .astrological-match {
             background: rgba(63, 81, 181, 0.05);
             padding: 15px;
@@ -330,21 +372,25 @@
             border-left: 3px solid #3F51B5;
             margin-bottom: 15px;
         }
-        
-        .practical-examples, .ideal-partner, .love-characteristics, .career-paths, .lli-advantage {
+
+        .practical-examples,
+        .ideal-partner,
+        .love-characteristics,
+        .career-paths,
+        .lli-advantage {
             background: rgba(255, 255, 255, 0.8);
             padding: 15px;
             border-radius: 8px;
             border-left: 3px solid #FF9800;
             margin-bottom: 15px;
         }
-        
+
         .practical-content ul {
             margin: 10px 0;
             padding-left: 0;
             list-style: none;
         }
-        
+
         .practical-content li {
             margin: 8px 0;
             padding: 8px 12px;
@@ -354,12 +400,12 @@
             line-height: 1.5;
             transition: transform 0.2s ease;
         }
-        
+
         .practical-content li:hover {
             transform: translateX(3px);
             border-left-color: #667eea;
         }
-        
+
         .synthesis {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
@@ -368,42 +414,470 @@
             margin-top: 40px;
             text-align: left;
         }
-        
+
         .synthesis h3 {
             font-size: 2em;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-        
+
         .synthesis p {
             font-size: 1.1em;
             line-height: 1.6;
             opacity: 0.95;
         }
-        
+
         @media (max-width: 768px) {
             .content-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
-            
+
             .header h1 {
                 font-size: 2em;
             }
-            
+
             .planet-name {
                 font-size: 1.5em;
+            }
+
+            /* ===== RESPONSIVE DESIGN FOR MOBILE ===== */
+
+            /* Large tablets and small laptops */
+            @media (max-width: 1024px) {
+                .container {
+                    margin: 10px;
+                }
+
+                .content {
+                    padding: 20px;
+                }
+
+                .aspect-grid,
+                .practical-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            /* Tablets */
+            @media (max-width: 768px) {
+                body {
+                    padding: 10px;
+                }
+
+                .container {
+                    margin: 0;
+                    border-radius: 15px;
+                }
+
+                .header {
+                    padding: 20px 15px;
+                }
+
+                .header h1 {
+                    font-size: 1.8em;
+                    margin-bottom: 8px;
+                }
+
+                .header p {
+                    font-size: 0.9em;
+                }
+
+                .content {
+                    padding: 20px 15px;
+                }
+
+                .section {
+                    padding: 20px 15px;
+                    margin-bottom: 25px;
+                }
+
+                .content-grid {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+
+                .planet-header {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 15px;
+                }
+
+                .planet-icon {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+
+                .planet-name {
+                    font-size: 1.4em;
+                }
+
+                .planet-position {
+                    font-size: 1em;
+                }
+
+                .aspect-grid {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                }
+
+                .practical-grid {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+
+                .synthesis {
+                    padding: 20px 15px;
+                }
+
+                .synthesis h3 {
+                    font-size: 1.6em;
+                    text-align: center;
+                }
+
+                .synthesis div[style*="grid"] {
+                    grid-template-columns: 1fr !important;
+                    gap: 15px !important;
+                }
+            }
+
+            /* Mobile phones */
+            @media (max-width: 480px) {
+                body {
+                    padding: 5px;
+                    font-size: 14px;
+                }
+
+                .container {
+                    border-radius: 10px;
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                }
+
+                .header {
+                    padding: 15px 10px;
+                }
+
+                .header h1 {
+                    font-size: 1.5em;
+                    line-height: 1.2;
+                }
+
+                .header p {
+                    font-size: 0.85em;
+                    margin-top: 5px;
+                }
+
+                .content {
+                    padding: 15px 10px;
+                }
+
+                .section {
+                    padding: 15px 10px;
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+                }
+
+                /* Planet headers on mobile */
+                .planet-header {
+                    flex-direction: row;
+                    text-align: left;
+                    gap: 10px;
+                    margin-bottom: 15px;
+                    padding-bottom: 10px;
+                }
+
+                .planet-icon {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 1.2em;
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                    flex-shrink: 0;
+                }
+
+                .planet-name {
+                    font-size: 1.1em;
+                    line-height: 1.2;
+                    margin-bottom: 3px;
+                }
+
+                .planet-position {
+                    font-size: 0.8em;
+                    line-height: 1.2;
+                }
+
+                /* Content sections */
+                .traits,
+                .examples {
+                    padding: 15px 10px;
+                    margin-top: 15px;
+                }
+
+                .traits h4,
+                .examples h4 {
+                    font-size: 1em;
+                    margin-bottom: 10px;
+                }
+
+                .trait-list li {
+                    padding: 8px 10px;
+                    margin: 6px 0;
+                    font-size: 0.9em;
+                    line-height: 1.3;
+                }
+
+                .example-item {
+                    padding: 10px;
+                    margin: 8px 0;
+                    font-size: 0.9em;
+                }
+
+                .example-title {
+                    font-size: 0.9em;
+                    margin-bottom: 5px;
+                }
+
+                /* Aspects section */
+                .aspect-card {
+                    padding: 15px 10px;
+                }
+
+                .aspect-header {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    margin-bottom: 10px;
+                    padding-bottom: 8px;
+                }
+
+                .aspect-symbol {
+                    font-size: 1.5em;
+                    margin-right: 10px;
+                    width: 40px;
+                    flex-shrink: 0;
+                }
+
+                .aspect-header h4 {
+                    font-size: 1em;
+                    line-height: 1.2;
+                    margin-bottom: 3px;
+                }
+
+                .aspect-type {
+                    font-size: 0.8em;
+                }
+
+                .aspect-content .meaning,
+                .aspect-content .examples {
+                    padding: 8px;
+                    margin-bottom: 10px;
+                    font-size: 0.85em;
+                }
+
+                .aspect-content ul {
+                    margin: 8px 0;
+                    padding-left: 15px;
+                }
+
+                .aspect-content li {
+                    margin: 5px 0;
+                    line-height: 1.3;
+                    font-size: 0.85em;
+                }
+
+                /* Practical applications */
+                .practical-card {
+                    padding: 15px 10px;
+                }
+
+                .practical-header {
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    padding-bottom: 10px;
+                }
+
+                .practical-icon {
+                    font-size: 2em;
+                    margin-right: 10px;
+                    flex-shrink: 0;
+                }
+
+                .practical-header h3 {
+                    font-size: 1.2em;
+                    line-height: 1.2;
+                }
+
+                .practical-content h4 {
+                    font-size: 1em;
+                    margin: 12px 0 8px 0;
+                }
+
+                .current-info,
+                .current-path,
+                .astrological-match,
+                .practical-examples,
+                .ideal-partner,
+                .love-characteristics,
+                .career-paths,
+                .lli-advantage {
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    font-size: 0.85em;
+                    border-radius: 6px;
+                }
+
+                .practical-content ul {
+                    margin: 8px 0;
+                    padding-left: 0;
+                }
+
+                .practical-content li {
+                    margin: 6px 0;
+                    padding: 6px 8px;
+                    font-size: 0.85em;
+                    line-height: 1.3;
+                    border-radius: 4px;
+                }
+
+                /* Contradictions section */
+                .contradiction-main .content-grid,
+                .contradiction-secondary .content-grid,
+                .contradiction-special .content-grid {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                }
+
+                /* Synthesis section */
+                .synthesis {
+                    padding: 15px 10px;
+                    margin-top: 25px;
+                }
+
+                .synthesis h3 {
+                    font-size: 1.4em;
+                    margin-bottom: 15px;
+                    text-align: center;
+                }
+
+                .synthesis p {
+                    font-size: 0.9em;
+                    line-height: 1.5;
+                }
+
+                .synthesis div[style*="grid"] {
+                    grid-template-columns: 1fr !important;
+                    gap: 12px !important;
+                    margin-top: 15px !important;
+                }
+
+                .synthesis div[style*="background: rgba(255,255,255,0.1)"] {
+                    padding: 12px !important;
+                    border-radius: 8px !important;
+                }
+
+                .synthesis h4 {
+                    font-size: 0.9em !important;
+                    margin-bottom: 8px !important;
+                }
+
+                .synthesis div[style*="background: rgba(255,255,255,0.1)"] p {
+                    font-size: 0.8em !important;
+                    line-height: 1.4 !important;
+                }
+
+                /* Section titles */
+                h2 {
+                    font-size: 1.3em !important;
+                    margin-bottom: 20px !important;
+                    padding: 0 10px;
+                    text-align: center;
+                }
+
+                h3 {
+                    font-size: 1.2em !important;
+                    margin-bottom: 15px !important;
+                }
+
+                /* Touch-friendly buttons and hover effects */
+                .trait-list li:hover,
+                .practical-content li:hover {
+                    transform: none;
+                    /* Disable hover transforms on mobile */
+                }
+
+                .section:hover,
+                .aspect-card:hover,
+                .practical-card:hover {
+                    transform: none;
+                    /* Disable hover transforms on mobile */
+                }
+
+                /* Ensure text is readable */
+                strong {
+                    font-weight: 600;
+                }
+
+                /* Improve spacing for small screens */
+                .aspects-section,
+                .contradictions-section,
+                .practical-applications {
+                    margin-top: 25px;
+                }
+
+                /* Fix any overflow issues */
+                .container {
+                    overflow-x: hidden;
+                }
+
+                .section {
+                    overflow-x: hidden;
+                }
+            }
+
+            /* Very small phones */
+            @media (max-width: 360px) {
+                body {
+                    font-size: 13px;
+                }
+
+                .header h1 {
+                    font-size: 1.3em;
+                }
+
+                .planet-name {
+                    font-size: 1em;
+                }
+
+                .planet-position {
+                    font-size: 0.75em;
+                }
+
+                .practical-icon {
+                    font-size: 1.8em;
+                }
+
+                .aspect-symbol {
+                    font-size: 1.3em;
+                    width: 35px;
+                }
+
+                .planet-icon {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1.1em;
+                }
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>🌟 Phân Tích Bản Đồ Chiêm Tinh Chi Tiết 🌟</h1>
             <p>Khám phá những khía cạnh sâu sắc của bản thân qua góc nhìn chiêm tinh</p>
         </div>
-        
+
         <div class="content">
             <!-- Mặt Trời -->
             <div class="section sun">
@@ -429,15 +903,18 @@
                         <h4>Ví dụ thực tế</h4>
                         <div class="example-item">
                             <div class="example-title">Trong công việc:</div>
-                            Bạn thường tự nhiên trở thành người dẫn dắt trong các dự án, thích được giao những nhiệm vụ quan trọng và muốn tên tuổi mình được ghi nhận.
+                            Bạn thường tự nhiên trở thành người dẫn dắt trong các dự án, thích được giao những nhiệm vụ
+                            quan trọng và muốn tên tuổi mình được ghi nhận.
                         </div>
                         <div class="example-item">
                             <div class="example-title">Trong giao tiếp:</div>
-                            Khi nói chuyện, bạn thường là tâm điểm, có khả năng kể chuyện hấp dẫn và thích nhận được sự chú ý từ người khác.
+                            Khi nói chuyện, bạn thường là tâm điểm, có khả năng kể chuyện hấp dẫn và thích nhận được sự
+                            chú ý từ người khác.
                         </div>
                         <div class="example-item">
                             <div class="example-title">Trong sáng tạo:</div>
-                            Bạn có xu hướng làm những việc độc đáo, khác biệt, muốn để lại dấu ấn cá nhân trong mọi tác phẩm.
+                            Bạn có xu hướng làm những việc độc đáo, khác biệt, muốn để lại dấu ấn cá nhân trong mọi tác
+                            phẩm.
                         </div>
                     </div>
                 </div>
@@ -467,15 +944,18 @@
                         <h4>Biểu hiện cụ thể</h4>
                         <div class="example-item">
                             <div class="example-title">Khi căng thẳng:</div>
-                            Bạn có xu hướng suy nghĩ nhiều, phân tích từng chi tiết của tình huống thay vì chỉ cảm nhận đơn thuần.
+                            Bạn có xu hướng suy nghĩ nhiều, phân tích từng chi tiết của tình huống thay vì chỉ cảm nhận
+                            đơn thuần.
                         </div>
                         <div class="example-item">
                             <div class="example-title">Với bí mật:</div>
-                            Bạn rất tò mò về những chuyện "không ai biết", thích khám phá những góc khuất trong tâm lý con người.
+                            Bạn rất tò mò về những chuyện "không ai biết", thích khám phá những góc khuất trong tâm lý
+                            con người.
                         </div>
                         <div class="example-item">
                             <div class="example-title">Trong mối quan hệ:</div>
-                            Bạn thường muốn hiểu sâu về người khác, thích những cuộc trò chuyện về tâm lý, triết lý sống.
+                            Bạn thường muốn hiểu sâu về người khác, thích những cuộc trò chuyện về tâm lý, triết lý
+                            sống.
                         </div>
                     </div>
                 </div>
@@ -543,7 +1023,8 @@
                         <h4>Biểu hiện thực tế</h4>
                         <div class="example-item">
                             <div class="example-title">Trong công việc:</div>
-                            Bạn luôn muốn project của mình được chú ý, thích làm những việc "khác người" và để lại dấu ấn.
+                            Bạn luôn muốn project của mình được chú ý, thích làm những việc "khác người" và để lại dấu
+                            ấn.
                         </div>
                         <div class="example-item">
                             <div class="example-title">Khi tức giận:</div>
@@ -769,7 +1250,8 @@
                         <h4>Trong tình yêu</h4>
                         <div class="example-item">
                             <div class="example-title">Cách yêu:</div>
-                            Bạn cần thời gian để mở lòng, nhưng một khi tin tưởng thì rất chung thủy và bảo vệ mối quan hệ.
+                            Bạn cần thời gian để mở lòng, nhưng một khi tin tưởng thì rất chung thủy và bảo vệ mối quan
+                            hệ.
                         </div>
                         <div class="example-item">
                             <div class="example-title">Sở thích chung:</div>
@@ -785,17 +1267,20 @@
 
             <!-- Các Góc Chiếu (Aspects) -->
             <div class="aspects-section" style="margin-top: 40px;">
-                <h2 style="text-align: center; color: #667eea; font-size: 2.2em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+                <h2
+                    style="text-align: center; color: #667eea; font-size: 2.2em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
                     🔮 Các Góc Chiếu Quan Trọng 🔮
                 </h2>
-                
+
                 <!-- Góc chiếu tích cực -->
                 <div class="aspect-category" style="margin-bottom: 30px;">
-                    <h3 style="color: #4CAF50; font-size: 1.8em; margin-bottom: 20px; display: flex; align-items: center;">
+                    <h3
+                        style="color: #4CAF50; font-size: 1.8em; margin-bottom: 20px; display: flex; align-items: center;">
                         ✨ Các Góc Chiếu Tích Cực (Hỗ trợ & Hài hòa)
                     </h3>
-                    
-                    <div class="aspect-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
+
+                    <div class="aspect-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
                         <div class="aspect-card positive">
                             <div class="aspect-header">
                                 <span class="aspect-symbol">🌟</span>
@@ -818,7 +1303,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="aspect-card positive">
                             <div class="aspect-header">
                                 <span class="aspect-symbol">🔱</span>
@@ -841,7 +1326,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="aspect-card positive">
                             <div class="aspect-header">
                                 <span class="aspect-symbol">💖</span>
@@ -864,7 +1349,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="aspect-card positive">
                             <div class="aspect-header">
                                 <span class="aspect-symbol">🌙</span>
@@ -889,14 +1374,16 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Góc chiếu thách thức -->
                 <div class="aspect-category" style="margin-bottom: 30px;">
-                    <h3 style="color: #FF5722; font-size: 1.8em; margin-bottom: 20px; display: flex; align-items: center;">
+                    <h3
+                        style="color: #FF5722; font-size: 1.8em; margin-bottom: 20px; display: flex; align-items: center;">
                         ⚡ Các Góc Chiếu Thách Thức (Cần cân bằng)
                     </h3>
-                    
-                    <div class="aspect-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
+
+                    <div class="aspect-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
                         <div class="aspect-card challenging">
                             <div class="aspect-header">
                                 <span class="aspect-symbol">🌊</span>
@@ -914,12 +1401,13 @@
                                     <ul>
                                         <li><strong>Vấn đề:</strong> Đặt kỳ vọng quá cao, dễ thất vọng</li>
                                         <li><strong>Giải pháp:</strong> Đặt mục tiêu từng giai đoạn nhỏ</li>
-                                        <li><strong>Tận dụng:</strong> Sử dụng trí tưởng tượng phong phú cho sáng tạo</li>
+                                        <li><strong>Tận dụng:</strong> Sử dụng trí tưởng tượng phong phú cho sáng tạo
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="aspect-card challenging">
                             <div class="aspect-header">
                                 <span class="aspect-symbol">🧠</span>
@@ -942,7 +1430,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="aspect-card challenging">
                             <div class="aspect-header">
                                 <span class="aspect-symbol">⚡</span>
@@ -965,7 +1453,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="aspect-card challenging">
                             <div class="aspect-header">
                                 <span class="aspect-symbol">🔄</span>
@@ -994,10 +1482,11 @@
 
             <!-- Mâu thuẫn cá nhân -->
             <div class="contradictions-section" style="margin-top: 40px;">
-                <h2 style="text-align: center; color: #667eea; font-size: 2.2em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+                <h2
+                    style="text-align: center; color: #667eea; font-size: 2.2em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
                     ⚖️ Những Mâu Thuẫn Nội Tâm ⚖️
                 </h2>
-                
+
                 <!-- Mâu thuẫn cốt lõi -->
                 <div class="section contradiction-main">
                     <div class="planet-header">
@@ -1025,11 +1514,13 @@
                             </div>
                             <div class="example-item">
                                 <div class="example-title">Khám phá bí ẩn:</div>
-                                "Tôi bị fascinate bởi những gì ẩn giấu - dark web, conspiracy theories, human psychology."
+                                "Tôi bị fascinate bởi những gì ẩn giấu - dark web, conspiracy theories, human
+                                psychology."
                             </div>
                             <div class="example-item">
                                 <div class="example-title">Kết quả:</div>
-                                Bạn là "CEO thích làm detective" - muốn lead nhưng cũng muốn investigate từ behind the scenes.
+                                Bạn là "CEO thích làm detective" - muốn lead nhưng cũng muốn investigate từ behind the
+                                scenes.
                             </div>
                         </div>
                     </div>
@@ -1219,45 +1710,57 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Integration advice -->
                 <div class="synthesis">
                     <h3>🎯 Cách Hòa Giải Những Mâu Thuẫn</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin-top: 20px;">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin-top: 20px;">
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
                             <h4 style="color: #FFD700; margin-bottom: 15px;">🎭 Leo-Gemini Integration:</h4>
-                            <p>Trở thành <strong>"thought leader"</strong> - shine through insights, không chỉ performance. Start a blog về cybersecurity, podcast về fintech trends. Bạn sẽ được noticed nhờ intelligence, không chỉ charisma.</p>
+                            <p>Trở thành <strong>"thought leader"</strong> - shine through insights, không chỉ
+                                performance. Start a blog về cybersecurity, podcast về fintech trends. Bạn sẽ được
+                                noticed nhờ intelligence, không chỉ charisma.</p>
                         </div>
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
                             <h4 style="color: #FFD700; margin-bottom: 15px;">🌊 Logic-Intuition Balance:</h4>
-                            <p>Use <strong>data to validate intuition</strong>. Trong cybersecurity, gut feeling + data analysis = siêu sức mạnh. Trust your hunches, nhưng backup bằng evidence.</p>
+                            <p>Use <strong>data to validate intuition</strong>. Trong cybersecurity, gut feeling + data
+                                analysis = siêu sức mạnh. Trust your hunches, nhưng backup bằng evidence.</p>
                         </div>
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
                             <h4 style="color: #FFD700; margin-bottom: 15px;">⚡ Control-Freedom Solution:</h4>
-                            <p>Create <strong>"structured adventures"</strong> - freelancing, remote work, own startup trong framework có planning. Tự do nhưng có safety net.</p>
+                            <p>Create <strong>"structured adventures"</strong> - freelancing, remote work, own startup
+                                trong framework có planning. Tự do nhưng có safety net.</p>
                         </div>
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
                             <h4 style="color: #FFD700; margin-bottom: 15px;">🧬 LLI Management:</h4>
-                            <p>Develop <strong>filtering systems</strong>: mindfulness meditation, journaling, focused work sessions. Use noise-canceling headphones, create "processing breaks" giữa các tasks.</p>
+                            <p>Develop <strong>filtering systems</strong>: mindfulness meditation, journaling, focused
+                                work sessions. Use noise-canceling headphones, create "processing breaks" giữa các
+                                tasks.</p>
                         </div>
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
                             <h4 style="color: #FFD700; margin-bottom: 15px;">🔄 Stability-Change Balance:</h4>
-                            <p>Plan for <strong>"controlled transformations"</strong> - set yearly "evolution goals". Ví dụ: học skill mới mỗi 6 tháng, thay đổi environment nhưng keep core routines.</p>
+                            <p>Plan for <strong>"controlled transformations"</strong> - set yearly "evolution goals". Ví
+                                dụ: học skill mới mỗi 6 tháng, thay đổi environment nhưng keep core routines.</p>
                         </div>
                         <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
                             <h4 style="color: #FFD700; margin-bottom: 15px;">💝 Love Strategy:</h4>
-                            <p>Tìm <strong>"intellectual rebels"</strong> - người có stable career nhưng unique perspectives. Think: professor nghiên cứu AI ethics, doctor làm telemedicine, artist làm NFT.</p>
+                            <p>Tìm <strong>"intellectual rebels"</strong> - người có stable career nhưng unique
+                                perspectives. Think: professor nghiên cứu AI ethics, doctor làm telemedicine, artist làm
+                                NFT.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="practical-applications" style="margin-top: 40px;">
-                <h2 style="text-align: center; color: #667eea; font-size: 2.2em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+                <h2
+                    style="text-align: center; color: #667eea; font-size: 2.2em; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
                     🎯 Ứng Dụng Thực Tế Trong Cuộc Sống 🎯
                 </h2>
-                
-                <div class="practical-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 25px;">
-                    
+
+                <div class="practical-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 25px;">
+
                     <!-- Phong cách học tập -->
                     <div class="practical-card learning">
                         <div class="practical-header">
@@ -1271,23 +1774,29 @@
                             <div class="astrological-match">
                                 <h4>🔮 Phân tích chiêm tinh:</h4>
                                 <ul>
-                                    <li><strong>Mercury Xử Nữ nghịch hành (nhà 11):</strong> Thích phân tích chi tiết, học theo hệ thống logic</li>
-                                    <li><strong>Moon Song Tử (nhà 8):</strong> Tò mò về những kiến thức sâu kín, bí ẩn</li>
-                                    <li><strong>Jupiter Xử Nữ (nhà 11):</strong> Học tốt trong môi trường nhóm, thích hoàn thiện</li>
+                                    <li><strong>Mercury Xử Nữ nghịch hành (nhà 11):</strong> Thích phân tích chi tiết,
+                                        học theo hệ thống logic</li>
+                                    <li><strong>Moon Song Tử (nhà 8):</strong> Tò mò về những kiến thức sâu kín, bí ẩn
+                                    </li>
+                                    <li><strong>Jupiter Xử Nữ (nhà 11):</strong> Học tốt trong môi trường nhóm, thích
+                                        hoàn thiện</li>
                                 </ul>
                             </div>
                             <div class="practical-examples">
                                 <h4>💡 Cách học hiệu quả:</h4>
                                 <ul>
-                                    <li><strong>Kết hợp nhiều lĩnh vực:</strong> IT + Tài chính + An ninh = Fintech Security (hoàn hảo cho bạn!)</li>
+                                    <li><strong>Kết hợp nhiều lĩnh vực:</strong> IT + Tài chính + An ninh = Fintech
+                                        Security (hoàn hảo cho bạn!)</li>
                                     <li><strong>Deep dive learning:</strong> Không học nông, mà đào sâu từng chủ đề</li>
-                                    <li><strong>Pattern recognition:</strong> LLI giúp bạn nhận ra mẫu hình mà người khác bỏ qua</li>
-                                    <li><strong>Research-based:</strong> Thích tìm hiểu "tại sao" hơn là "làm thế nào"</li>
+                                    <li><strong>Pattern recognition:</strong> LLI giúp bạn nhận ra mẫu hình mà người
+                                        khác bỏ qua</li>
+                                    <li><strong>Research-based:</strong> Thích tìm hiểu "tại sao" hơn là "làm thế nào"
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Gu người yêu -->
                     <div class="practical-card love-type">
                         <div class="practical-header">
@@ -1298,7 +1807,8 @@
                             <div class="astrological-match">
                                 <h4>🔮 Dựa trên Venus Cự Giải (nhà 9) + các aspects:</h4>
                                 <ul>
-                                    <li><strong>Venus-Uranus tam hợp:</strong> Thích người độc đáo, không theo khuôn mẫu</li>
+                                    <li><strong>Venus-Uranus tam hợp:</strong> Thích người độc đáo, không theo khuôn mẫu
+                                    </li>
                                     <li><strong>Venus nhà 9:</strong> Người có tri thức, thích khám phá</li>
                                     <li><strong>Venus Cự Giải:</strong> Cần cảm giác an toàn, chung thủy</li>
                                 </ul>
@@ -1316,7 +1826,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Phong cách yêu -->
                     <div class="practical-card love-style">
                         <div class="practical-header">
@@ -1335,16 +1845,20 @@
                             <div class="love-characteristics">
                                 <h4>💖 Cách bạn thể hiện tình yêu:</h4>
                                 <ul>
-                                    <li><strong>Giai đoạn đầu:</strong> Thận trọng, cần thời gian quan sát và hiểu người kia</li>
+                                    <li><strong>Giai đoạn đầu:</strong> Thận trọng, cần thời gian quan sát và hiểu người
+                                        kia</li>
                                     <li><strong>Khi yêu:</strong> Rất chung thủy, bảo vệ mối quan hệ như báu vật</li>
-                                    <li><strong>Cách quan tâm:</strong> Lắng nghe sâu, phân tích tâm lý, đưa ra lời khuyên thực tế</li>
-                                    <li><strong>Trong xung đột:</strong> Cần không gian riêng để suy nghĩ, không thích tranh cãi gay gắt</li>
-                                    <li><strong>Tình yêu lâu dài:</strong> Thích phát triển cùng nhau, học hỏi lẫn nhau</li>
+                                    <li><strong>Cách quan tâm:</strong> Lắng nghe sâu, phân tích tâm lý, đưa ra lời
+                                        khuyên thực tế</li>
+                                    <li><strong>Trong xung đột:</strong> Cần không gian riêng để suy nghĩ, không thích
+                                        tranh cãi gay gắt</li>
+                                    <li><strong>Tình yêu lâu dài:</strong> Thích phát triển cùng nhau, học hỏi lẫn nhau
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Nghề nghiệp -->
                     <div class="practical-card career">
                         <div class="practical-header">
@@ -1358,26 +1872,33 @@
                             <div class="astrological-match">
                                 <h4>🔮 Tại sao phù hợp:</h4>
                                 <ul>
-                                    <li><strong>Sun Sư Tử (nhà 10):</strong> Muốn thành công, được công nhận trong sự nghiệp</li>
+                                    <li><strong>Sun Sư Tử (nhà 10):</strong> Muốn thành công, được công nhận trong sự
+                                        nghiệp</li>
                                     <li><strong>Mercury Xử Nữ:</strong> Khả năng phân tích, debug, tìm lỗi xuất sắc</li>
-                                    <li><strong>Moon nhà 8:</strong> Thích khám phá những điều ẩn giấu (perfect for cybersecurity!)</li>
-                                    <li><strong>Pluto nhà 2:</strong> Có thể "biến đổi" về tài chính, hiểu sâu về tiền bạc</li>
+                                    <li><strong>Moon nhà 8:</strong> Thích khám phá những điều ẩn giấu (perfect for
+                                        cybersecurity!)</li>
+                                    <li><strong>Pluto nhà 2:</strong> Có thể "biến đổi" về tài chính, hiểu sâu về tiền
+                                        bạc</li>
                                 </ul>
                             </div>
                             <div class="career-paths">
                                 <h4>🎯 Các hướng phát triển cụ thể:</h4>
                                 <ul>
-                                    <li><strong>Fintech Security Specialist:</strong> Bảo mật cho ngân hàng số, ví điện tử</li>
-                                    <li><strong>Blockchain Security Auditor:</strong> Kiểm tra smart contracts, DeFi protocols</li>
+                                    <li><strong>Fintech Security Specialist:</strong> Bảo mật cho ngân hàng số, ví điện
+                                        tử</li>
+                                    <li><strong>Blockchain Security Auditor:</strong> Kiểm tra smart contracts, DeFi
+                                        protocols</li>
                                     <li><strong>Cybersecurity Consultant:</strong> Tư vấn cho các tổ chức tài chính</li>
-                                    <li><strong>Risk Management Analyst:</strong> Phân tích rủi ro công nghệ trong tài chính</li>
+                                    <li><strong>Risk Management Analyst:</strong> Phân tích rủi ro công nghệ trong tài
+                                        chính</li>
                                     <li><strong>Tech Lead/CTO:</strong> Dẫn dắt team phát triển sản phẩm fintech</li>
                                 </ul>
                             </div>
                             <div class="lli-advantage">
                                 <h4>🧠 Lợi thế từ LLI + IQ 130:</h4>
                                 <ul>
-                                    <li><strong>Pattern Recognition:</strong> Phát hiện mối đe dọa mà AI chưa học được</li>
+                                    <li><strong>Pattern Recognition:</strong> Phát hiện mối đe dọa mà AI chưa học được
+                                    </li>
                                     <li><strong>System Thinking:</strong> Nhìn thấy mối liên hệ giữa các hệ thống</li>
                                     <li><strong>Innovation:</strong> Tạo ra giải pháp độc đáo, không theo khuôn mẫu</li>
                                     <li><strong>Research Ability:</strong> Đào sâu vào những lĩnh vực mới nổi</li>
@@ -1392,25 +1913,26 @@
             <div class="synthesis">
                 <h3>🌟 Tổng Hợp: Bạn Là Ai? 🌟</h3>
                 <p>
-                    <strong>Cốt lõi tính cách:</strong> Bạn là một người có bản ngã mạnh mẽ nhưng cảm xúc sâu sắc, 
-                    có khả năng cân bằng tự nhiên giữa lý trí và trực giác. Với IQ 130 + LLI, bạn có khả năng 
+                    <strong>Cốt lõi tính cách:</strong> Bạn là một người có bản ngã mạnh mẽ nhưng cảm xúc sâu sắc,
+                    có khả năng cân bằng tự nhiên giữa lý trí và trực giác. Với IQ 130 + LLI, bạn có khả năng
                     nhận thức và phân tích vượt trội, đặc biệt trong việc phát hiện những pattern ẩn.
                     <br><br>
-                    <strong>Trong học tập:</strong> Bạn học tốt nhất khi được deep dive vào các chủ đề phức tạp, 
-                    kết hợp nhiều lĩnh vực. Con đường IT + Tài chính + An ninh mạng hoàn toàn phù hợp với 
+                    <strong>Trong học tập:</strong> Bạn học tốt nhất khi được deep dive vào các chủ đề phức tạp,
+                    kết hợp nhiều lĩnh vực. Con đường IT + Tài chính + An ninh mạng hoàn toàn phù hợp với
                     khả năng phân tích chi tiết và tò mò về những điều bí ẩn của bạn.
                     <br><br>
-                    <strong>Trong tình yêu:</strong> Bạn cần một người bạn đời có trí tuệ, độc lập nhưng chung thủy. 
-                    Bạn yêu bằng cách hiểu sâu và bảo vệ mối quan hệ. Cần thời gian để mở lòng nhưng một khi 
+                    <strong>Trong tình yêu:</strong> Bạn cần một người bạn đời có trí tuệ, độc lập nhưng chung thủy.
+                    Bạn yêu bằng cách hiểu sâu và bảo vệ mối quan hệ. Cần thời gian để mở lòng nhưng một khi
                     tin tưởng thì rất cam kết.
                     <br><br>
-                    <strong>Trong sự nghiệp:</strong> Bạn có tiềm năng trở thành chuyên gia hàng đầu trong 
-                    Fintech Security - lĩnh vực hoàn hảo cho sự kết hợp giữa khả năng phân tích kỹ thuật, 
-                    hiểu biết tài chính và bản năng bảo vệ. LLI giúp bạn nhìn ra những mối đe dọa mà 
+                    <strong>Trong sự nghiệp:</strong> Bạn có tiềm năng trở thành chuyên gia hàng đầu trong
+                    Fintech Security - lĩnh vực hoàn hảo cho sự kết hợp giữa khả năng phân tích kỹ thuật,
+                    hiểu biết tài chính và bản năng bảo vệ. LLI giúp bạn nhìn ra những mối đe dọa mà
                     người khác có thể bỏ qua.
                 </p>
             </div>
         </div>
     </div>
 </body>
+
 </html>
